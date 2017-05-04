@@ -118,3 +118,6 @@ Authors: Frankie Cancino & Daniel Hanson
 * Multithreading
   * Threads or thread-like abilities
   * How is multitasking accomplished?
+
+---
+[Sources](https://github.com/frankiecancino/JavaVsPython/Sources.md)
