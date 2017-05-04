@@ -120,4 +120,4 @@ Authors: Frankie Cancino & Daniel Hanson
   * How is multitasking accomplished?
 
 ---
-[Sources](https://github.com/frankiecancino/JavaVsPython/Sources.md)
+[Sources (Documentation & Code)](https://github.com/frankiecancino/JavaVsPython/blob/master/Sources.md)
