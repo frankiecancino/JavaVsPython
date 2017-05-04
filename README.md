@@ -65,11 +65,10 @@ Authors: Frankie Cancino & Daniel Hanson
 * Language purpose/genesis
   * Why was the language created?
     * We needed a better way to do system administration than by writing either C programs or Bourne shell scripts, a scripting language with a syntax like ABC but with access to the Amoeba system calls would fill the need. Python was used in the Amoeba project with increasing success.
-    
   * What problems was the language trying to address?
-  
+    * The language comes with a large standard library that covers areas such as string processing (regular expressions, Unicode, calculating differences between files), Internet protocols (HTTP, FTP, SMTP, XML-RPC, POP, IMAP, CGI programming), software engineering (unit testing, logging, profiling, parsing Python code), and operating system interfaces (system calls, filesystems, TCP/IP sockets).
   * Is the language a reaction to a previous language or a replacement for another language?
-  
+    * C programs or Bourne shell scripts
 * Unique features of the language
   * Does the language have any particularly unique features?
   
