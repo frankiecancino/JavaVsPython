@@ -3,7 +3,7 @@ Description of the similarities and differences between the programming language
 
 Authors: Frankie Cancino & Daniel Hanson
 
-##Java
+## Java
 * Language purpose/genesis
   * Why was the language created?
   * What problems was the language trying to address?
@@ -61,7 +61,7 @@ Authors: Frankie Cancino & Daniel Hanson
   * Threads or thread-like abilities
   * How is multitasking accomplished?
 
-##Python
+## Python
 * Language purpose/genesis
   * Why was the language created?
   * What problems was the language trying to address?
