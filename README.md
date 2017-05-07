@@ -127,7 +127,7 @@ Authors: Frankie Cancino & Daniel Hanson
     * Are both reference and value types supported?
       * The authors who call the mechanism call-by-value and those who call it call-by-reference are stretching the definitions until they fit. Correctly speaking, Python uses a mechanism, which is known as "Call-by-Object", sometimes also called "Call by Object Reference" or "Call by Sharing". If you pass immutable arguments like integers, strings or tuples to a function, the passing acts like call-by-value. The object reference is passed to the function parameters. They can't be changed within the function, because they can't be changed at all, i.e. they are immutable. It's different, if we pass mutable arguments. They are also passed by object reference, but they can be changed in place in the function. If we pass a list to a function, we have to consider two cases: Elements of a list can be changed in place, i.e. the list will be changed even in the caller's scope. If a new list is assigned to the name, the old list will not be affected, i.e. the list in the caller's scope will remain untouched. 
     * Can new value types be created?
-      * 
+      * Python allows the writer of an extension module to define new types that can be manipulated from Python code, much like strings and lists in core Python.
 * Classes
   * Defining
   
