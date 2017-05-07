@@ -130,16 +130,50 @@ Authors: Frankie Cancino & Daniel Hanson
       * Python allows the writer of an extension module to define new types that can be manipulated from Python code, much like strings and lists in core Python.
 * Classes
   * Defining
-  
+    * 
+    ```
+    class ClassName:
+    <statement-1>
+    .
+    .
+    .
+    <statement-N>
+    ```
   * Creating new instances
-  
+    * Data attributes correspond to “instance variables” in Smalltalk, and to “data members” in C++. Data attributes need not be declared; like local variables, they spring into existence when they are first assigned to. For example, if x is the instance of MyClass created above, the following piece of code will print the value 16, without leaving a trace:
+    ```
+    x.counter = 1
+    while x.counter < 10:
+     x.counter = x.counter * 2
+    print(x.counter)
+    del x.counter
+    ```
   * Constructing/initializing
-  
+    ```
+    class Dog:
+
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []    # creates a new empty list for each dog
+
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+
+    d = Dog('Fido')
+    d.add_trick('roll over')
+    d.tricks ['roll over']
+    ```
   * Destructing/de-initializing
-  
+    ```
+    x.counter = 1
+    while x.counter < 10:
+     x.counter = x.counter * 2
+    print(x.counter)
+    del x.counter
+    ```
 * Instance reference name in data type (class)
   * this?  self?
-  
+    * Often, the first argument of a method is called self. This is nothing more than a convention: the name self has absolutely no special meaning to Python. Note, however, that by not following the convention your code may be less readable to other Python programmers, and it is also conceivable that a class browser program might be written that relies upon such a convention.
 * Properties
   * Getters and setters...write your own or built in?
   
