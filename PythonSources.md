@@ -6,3 +6,4 @@
 * [Python Pass by Value/Reference](http://www.python-course.eu/passing_arguments.php)
 * [Python Create New Types](https://docs.python.org/2/extending/newtypes.html)
 * [Python Classes](https://docs.python.org/3/tutorial/classes.html)
+* [Python Getters/Setters](https://docs.quantifiedcode.com/python-anti-patterns/correctness/implementing_java-style_getters_and_setters.html)
