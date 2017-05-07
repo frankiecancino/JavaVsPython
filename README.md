@@ -96,14 +96,34 @@ Authors: Frankie Cancino & Daniel Hanson
     do_global()
     print("After global assignment:", spam)
 
-scope_test()
-print("In global scope:", spam)
+    scope_test()
+    print("In global scope:", spam)
     ```
   * How are name spaces used?
     * Most namespaces are currently implemented as Python dictionaries, but that’s normally not noticeable in any way (except for performance), and it may change in the future. Examples of namespaces are: the set of built-in names (containing functions such as abs(), and built-in exception names); the global names in a module; and the local names in a function invocation. In a sense the set of attributes of an object also form a namespace. The important thing to know about namespaces is that there is absolutely no relation between names in different namespaces; for instance, two different modules may both define a function maximize without confusion — users of the modules must prefix it with the module name.
 * Types
     * What types does the language support?
-    
+      * boolean: the type of the built-in values True and False. Useful in conditional expressions, and anywhere else you want to represent the truth or falsity of some condition. Mostly interchangeable with the integers 1 and 0. In fact, conditional expressions will accept values of any type, treating special ones like boolean False, integer 0 and the empty string "" as equivalent to False, and all other values as equivalent to True. But for safety’s sake, it is best to only use boolean values in these places.
+      * Numeric types:
+
+        * int: Integers; equivalent to C longs in Python 2.x, non-limited length in Python 3.x
+        * long: Long integers of non-limited length; exists only in Python 2.x
+        * float: Floating-Point numbers, equivalent to C doubles
+        * complex: Complex Numbers
+      * Sequences:
+
+        * str: String; represented as a sequence of 8-bit characters in Python 2.x, but as a sequence of Unicode characters (in the range of U+0000 - U+10FFFF) in Python 3.x
+        * bytes: a sequence of integers in the range of 0-255; only available in Python 3.x
+        * byte array: like bytes, but mutable (see below); only available in Python 3.x
+        * list
+        * tuple
+      * Sets:
+
+        * set: an unordered collection of unique objects; available as a standard type since Python 2.6
+        * frozen set: like set, but immutable (see below); available as a standard type since Python 2.6
+      * Mappings:
+
+        * dict: Python dictionaries, also called hashmaps or associative arrays, which means that an element of the list is associated with a definition, rather like a Map in Java
     * Are both reference and value types supported?
     
     * Can new value types be created?
