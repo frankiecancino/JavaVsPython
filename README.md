@@ -61,6 +61,9 @@ Authors: Frankie Cancino & Daniel Hanson
   * Threads or thread-like abilities
   * How is multitasking accomplished?
 
+---
+[Java Sources (Documentation & Code)](https://github.com/frankiecancino/JavaVsPython/blob/master/JavaSources.md)
+
 ## Python
 * Language purpose/genesis
   * Why was the language created?
@@ -177,7 +180,7 @@ Authors: Frankie Cancino & Daniel Hanson
   * Getters and setters...write your own or built in?
     * Python is not Java. If you need to set or get the members of a class or object, just expose the member publicly and access it directly. If you need to perform some computations before getting or setting the member, then use Python’s built-in property decorator.
   * Backing variables?
-    * 
+    * Properties is a way of defining the methods of setting, getting and deleting attributes of a function. They let you use methods to define how the field should be accessed and then allow you to use the standard interface for fields.
   * Computed properties?
   
 * Interfaces / protocols
@@ -236,4 +239,4 @@ Authors: Frankie Cancino & Daniel Hanson
   * How is multitasking accomplished?
 
 ---
-[Sources (Documentation & Code)](https://github.com/frankiecancino/JavaVsPython/blob/master/Sources.md)
+[Python Sources (Documentation & Code)](https://github.com/frankiecancino/JavaVsPython/blob/master/PythonSources.md)
