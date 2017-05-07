@@ -130,7 +130,6 @@ Authors: Frankie Cancino & Daniel Hanson
       * Python allows the writer of an extension module to define new types that can be manipulated from Python code, much like strings and lists in core Python.
 * Classes
   * Defining
-    * 
     ```
     class ClassName:
     <statement-1>
@@ -176,9 +175,9 @@ Authors: Frankie Cancino & Daniel Hanson
     * Often, the first argument of a method is called self. This is nothing more than a convention: the name self has absolutely no special meaning to Python. Note, however, that by not following the convention your code may be less readable to other Python programmers, and it is also conceivable that a class browser program might be written that relies upon such a convention.
 * Properties
   * Getters and setters...write your own or built in?
-  
+    * Python is not Java. If you need to set or get the members of a class or object, just expose the member publicly and access it directly. If you need to perform some computations before getting or setting the member, then use Python’s built-in property decorator.
   * Backing variables?
-  
+    * 
   * Computed properties?
   
 * Interfaces / protocols
