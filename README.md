@@ -71,10 +71,10 @@ Authors: Frankie Cancino & Daniel Hanson
     * C programs or Bourne shell scripts
 * Unique features of the language
   * Does the language have any particularly unique features?
-  
+    * Uses an elegant syntax, making the programs you write easier to read. Is an easy-to-use language that makes it simple to get your program working. This makes Python ideal for prototype development and other ad-hoc programming tasks, without compromising maintainability. Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, reading and modifying files. Python's interactive mode makes it easy to test short snippets of code. Is easily extended by adding new modules implemented in a compiled language such as C or C++. Can also be embedded into an application to provide a programmable interface. Runs anywhere, including Mac OS X, Windows, Linux, and Unix. Is free software in two senses. It doesn't cost anything to download or use Python, or to include it in your application. Python can also be freely modified and re-distributed, because while the language is copyrighted it's available under an open source license.
 * Name spaces
   * How are name spaces implemented?
-  
+    * 
   * How are name spaces used?
   
 * Types
