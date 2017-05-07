@@ -8,3 +8,4 @@
 * [Classes](https://docs.python.org/3/tutorial/classes.html)
 * [Getters/Setters](https://docs.quantifiedcode.com/python-anti-patterns/correctness/implementing_java-style_getters_and_setters.html)
 * [Backing Variables](http://www.techrepublic.com/article/less-painful-getters-and-setters-using-properties-in-python/)
+* [Computed Properties](https://wiki.python.org/moin/ComputedAttributesUsingPropertyObjects)
