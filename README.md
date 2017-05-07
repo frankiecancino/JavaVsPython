@@ -182,7 +182,27 @@ Authors: Frankie Cancino & Daniel Hanson
   * Backing variables?
     * Properties is a way of defining the methods of setting, getting and deleting attributes of a function. They let you use methods to define how the field should be accessed and then allow you to use the standard interface for fields.
   * Computed properties?
-  
+    ```
+    class Widget(object):
+    def __init__(self, arg=None):
+        if arg:
+            self.color_data = arg
+        else:
+            self.color_data = (0,0,0)
+
+    def get_color(self):
+        if type(self.color_data) is tuple:
+            return self.color_data
+        else:
+            return str_to_tuple(self.color_data)
+
+    def set_color(self, arg):
+        self.color_data = arg
+
+    # create property object to dispatch 'get' and 'set' methods
+    # NOTE: "color" is a class attribute, not an instance attribute
+    color = property(get_color, set_color)
+    ```
 * Interfaces / protocols
   * What does the language support?
   
