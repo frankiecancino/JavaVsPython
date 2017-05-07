@@ -212,19 +212,10 @@ Authors: Frankie Cancino & Daniel Hanson
     * If you're creating a framework, the situation is different. A framework is a library that calls the framework user's code. Now, somebody will be writing code that -- in effect -- is part of your library, and they need to know things about how their code will be called. With a library, it's okay if the author or maintainers are the only ones who know the internal dependencies of their code. But with a framework, the users are effectively co-authors and co-maintainers. They need more concrete information.
     ```
     class IIterable(Interface):
-
-     """An object that can be looped over with 'for'"""
      def __iter__():
-      """Return an IIterator for this iterable/container,
-         or return self if this is an iterator"""
 
-   class IIterator(IIterable):
-
-     """Iterator representing the current position of a 'for' loop"""
-
+    class IIterator(IIterable):
      def next():
-      """Return the next item, or raise StopIteration
-         if finished"""
     ```
 * Inheritance / extension
 
