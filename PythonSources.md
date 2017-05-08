@@ -11,3 +11,4 @@
 * [Computed Properties](https://wiki.python.org/moin/ComputedAttributesUsingPropertyObjects)
 * [Interfaces](http://dirtsimple.org/2004/12/python-interfaces-are-not-java.html)
 * [Inheritance](https://docs.python.org/2/tutorial/classes.html)
+* [Reflection](https://en.wikibooks.org/wiki/Python_Programming/Reflection)
