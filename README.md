@@ -255,9 +255,9 @@ Authors: Frankie Cancino & Daniel Hanson
     ```
 * Null/nil references
   * Which does the language use? (null/nil/etc)
-  
+    * The Python analogue of null pointer known from other programming languages is None
   * Does the language have features for handling null/nil references?
-  
+    * None is not a null pointer or a null reference but an actual object of which there is only one instance. Comparisons to None are usually made using is rather than ==.
 * Errors and exception handling
 
 * Lambda expressions, closures, or functions as types
