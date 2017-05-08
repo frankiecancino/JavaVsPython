@@ -12,3 +12,4 @@
 * [Interfaces](http://dirtsimple.org/2004/12/python-interfaces-are-not-java.html)
 * [Inheritance](https://docs.python.org/2/tutorial/classes.html)
 * [Reflection](https://en.wikibooks.org/wiki/Python_Programming/Reflection)
+* [Memory Management](https://docs.python.org/2/c-api/memory.html)
