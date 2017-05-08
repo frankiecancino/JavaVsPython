@@ -228,13 +228,13 @@ Authors: Frankie Cancino & Daniel Hanson
     * Reflection-enabling functions include type(), isinstance(), callable(), dir() and getattr().
 * Memory management
   * How is it handled?
-  
+    * Memory management in Python involves a private heap containing all Python objects and data structures.
   * How does it work?
-  
+    * The management of this private heap is ensured internally by the Python memory manager. The Python memory manager has different components which deal with various dynamic storage management aspects, like sharing, segmentation, preallocation or caching.
   * Garbage collection?
-  
+    * A raw memory allocator ensures that there is enough room in the private heap for storing all Python-related data by interacting with the memory manager of the operating system. On top of the raw memory allocator, several object-specific allocators operate on the same heap and implement distinct memory management policies adapted to the peculiarities of every object type.
   * Automatic reference counting?
-  
+    * The management of the Python heap is performed by the interpreter itself and that the user has no control over it, even if she regularly manipulates object pointers to memory blocks inside that heap. The allocation of heap space for Python objects and other internal buffers is performed on demand by the Python memory manager through the Python/C API functions listed in this document.
 * Comparisons of references and values
   * How are values compared? (i.e. comparing two strings)
   
