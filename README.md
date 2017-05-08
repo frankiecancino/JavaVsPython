@@ -259,7 +259,15 @@ Authors: Frankie Cancino & Daniel Hanson
   * Does the language have features for handling null/nil references?
     * None is not a null pointer or a null reference but an actual object of which there is only one instance. Comparisons to None are usually made using is rather than ==.
 * Errors and exception handling
-
+  ```
+  def this_fails():
+   x = 1/0
+  try:
+   this_fails()
+  except ZeroDivisionError as err:
+   print('Handling run-time error:', err)
+Handling run-time error: division by zero
+  ```
 * Lambda expressions, closures, or functions as types
 
 * Implementation of listeners and event handlers
