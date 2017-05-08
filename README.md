@@ -269,9 +269,14 @@ Authors: Frankie Cancino & Daniel Hanson
   Handling run-time error: division by zero
   ```
 * Lambda expressions, closures, or functions as types
-
+  * Closures are possible in Python because functions are first-class objects. A function is merely an object of type function. Being an object means it is possible to pass a function object (an uncalled function) around as argument or as return value or to assign another name to the function object. A unique feature that makes closure useful is that the enclosed function may use the names defined in the parent function's scope.
+  * Lambda Expressions:
+  ```
+   def attribution(name):
+    return lambda x: x + ' -- ' + name
+  ```
 * Implementation of listeners and event handlers
-
+  * 
 * Singleton
   * How is a singleton implemented?
   
