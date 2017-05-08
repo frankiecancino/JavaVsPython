@@ -237,7 +237,22 @@ Authors: Frankie Cancino & Daniel Hanson
     * The management of the Python heap is performed by the interpreter itself and that the user has no control over it, even if she regularly manipulates object pointers to memory blocks inside that heap. The allocation of heap space for Python objects and other internal buffers is performed on demand by the Python memory manager through the Python/C API functions listed in this document.
 * Comparisons of references and values
   * How are values compared? (i.e. comparing two strings)
-  
+    ```
+    "tim" == "tie"
+    False
+    "free" != "freedom"
+    True
+    "arrow" > "aron"
+    True
+    "green" >= "glow"
+    True
+    "green" < "glow"
+    False
+    "green" <= "glow"
+    False
+    "ab" <= "abc"
+    True
+    ```
 * Null/nil references
   * Which does the language use? (null/nil/etc)
   
