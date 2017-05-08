@@ -17,3 +17,7 @@
 * [Null/nil Reference](https://en.wikibooks.org/wiki/Python_Programming/Data_Types)
 * [Exception Handling](https://docs.python.org/3/tutorial/errors.html)
 * [Lambda Expressions/Closures](https://en.wikibooks.org/wiki/Python_Programming/Functions)
+* [Event Handlers](http://python-utilities.readthedocs.io/en/latest/events.html)
+* [Singletons](http://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html)
+* [Procedural & Functional Programming](https://blog.newrelic.com/2015/04/01/python-programming-styles/)
+* [Multithreading](https://www.tutorialspoint.com/python/python_multithreading.htm)
