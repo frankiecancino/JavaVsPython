@@ -10,3 +10,4 @@
 * [Backing Variables](http://www.techrepublic.com/article/less-painful-getters-and-setters-using-properties-in-python/)
 * [Computed Properties](https://wiki.python.org/moin/ComputedAttributesUsingPropertyObjects)
 * [Interfaces](http://dirtsimple.org/2004/12/python-interfaces-are-not-java.html)
+* [Inheritance](https://docs.python.org/2/tutorial/classes.html)
