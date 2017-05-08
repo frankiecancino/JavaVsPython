@@ -218,14 +218,14 @@ Authors: Frankie Cancino & Daniel Hanson
      def next():
     ```
 * Inheritance / extension
- * Python has two built-in functions that work with inheritance:
-  * Use isinstance() to check an instance’s type: isinstance(obj, int) will be True only if obj.__class__ is int or some class derived from int.
-  * Use issubclass() to check class inheritance: issubclass(bool, int) is True since bool is a subclass of int. However, issubclass(unicode, str) is False since unicode is not a subclass of str (they only share a common ancestor, basestring).
+  * Python has two built-in functions that work with inheritance:
+    * Use isinstance() to check an instance’s type: isinstance(obj, int) will be True only if obj.__class__ is int or some class derived from int.
+    * Use issubclass() to check class inheritance: issubclass(bool, int) is True since bool is a subclass of int. However, issubclass(unicode, str) is False since unicode is not a subclass of str (they only share a common ancestor, basestring).
 * Reflection
   * What reflection abilities are supported?
-  
+    * A Python script can find out about the type, class, attributes and methods of an object. This is referred to as reflection or introspection.
   * How is reflection used?
-  
+    * Reflection-enabling functions include type(), isinstance(), callable(), dir() and getattr().
 * Memory management
   * How is it handled?
   
