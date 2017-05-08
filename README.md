@@ -266,7 +266,7 @@ Authors: Frankie Cancino & Daniel Hanson
    this_fails()
   except ZeroDivisionError as err:
    print('Handling run-time error:', err)
-Handling run-time error: division by zero
+  Handling run-time error: division by zero
   ```
 * Lambda expressions, closures, or functions as types
 
