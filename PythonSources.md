@@ -16,3 +16,4 @@
 * [String Comparison](http://thepythonguru.com/python-strings/)
 * [Null/nil Reference](https://en.wikibooks.org/wiki/Python_Programming/Data_Types)
 * [Exception Handling](https://docs.python.org/3/tutorial/errors.html)
+* [Lambda Expressions/Closures](https://en.wikibooks.org/wiki/Python_Programming/Functions)
