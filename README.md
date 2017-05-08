@@ -6,61 +6,168 @@ Authors: Frankie Cancino & Daniel Hanson
 ## Java
 * Language purpose/genesis
   * Why was the language created?
+    *  It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
   * What problems was the language trying to address?
+    * Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
   * Is the language a reaction to a previous language or a replacement for another language?
+    * The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.
 * Unique features of the language
   * Does the language have any particularly unique features?
+    * Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture
 * Name spaces
   * How are name spaces implemented?
+    ```
+    package com.davidflanagan.jude;
+    ```
   * How are name spaces used?
+    * A package is a named collection of classes (and possibly subpackages). Packages serve to group related classes and define a namespace for the classes they contain.
 * Types
     * What types does the language support?
+      * boolean, the type whose values are either true or false
+      * char, the character type whose values are 16-bit Unicode characters
+      * arithmetic types:
+        * integral types:
+          * byte
+          * short
+          * int
+          * long
+        * floating-point types:
+          * float
+          * double
     * Are both reference and value types supported?
+      * Java does manipulate objects by reference, and all object variables are references. However, Java doesn't pass method arguments by reference; it passes them by value.
     * Can new value types be created?
+      * An object is a class instance or an array. The reference values (often just references) are pointers to these objects, and a special null reference, which refers to no object. A class instance is explicitly created by a class instance creation expression
 * Classes
   * Defining
+    ```
+    public class Bicycle {
+    }
+    ```
   * Creating new instances
+    ```
+    Bicycle myBike = new Bicycle(30, 0, 8);
+    ```
   * Constructing/initializing
+    ```
+    public class Bicycle {
+     public Bicycle(){
+     }
+    }
+    ```
   * Destructing/de-initializing
+    * There is no direct equivalent of a destructor.
 * Instance reference name in data type (class)
   * this?  self?
+    * this
 * Properties
   * Getters and setters...write your own or built in?
+    * Write your own
   * Backing variables?
+    * A typical JavaServer Faces application includes one or more backing beans, each of which is a JavaServer Faces managed bean that is associated with the UI components used in a particular page.
   * Computed properties?
+    ```
+    public class Person {
+     public String name;
+     public String surname;
+     
+     transient public String fullName;	// (1)
+     protected String getFullName() {	// (2)
+     return name + " " + surname;	
+     }
+    }
+    ```
 * Interfaces / protocols
   * What does the language support?
+    * Interfaces
   * What abilities does it have?
+    * An interface is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types.
   * How is it used?
+    *  When an instantiable class implements an interface, it provides a method body for each of the methods declared in the interface
 * Inheritance / extension
+  * Single Inheritance
+  ```
+  public class MountainBike extends Bicycle {
+  }
+  ```
 * Reflection
   * What reflection abilities are supported?
+    * Reflection is a feature in the Java programming language. It allows an executing Java program to examine or "introspect" upon itself, and manipulate internal properties of the program. For example, it's possible for a Java class to obtain the names of all its members and display them.
   * How is reflection used?
+    * One tangible use of reflection is in JavaBeans, where software components can be manipulated visually via a builder tool. The tool uses reflection to obtain the properties of Java components (classes) as they are dynamically loaded.
 * Memory management
   * How is it handled?
+    * Java objects reside in an area called the heap.
   * How does it work?
+    * The heap is created when the JVM starts up and may increase or decrease in size while the application runs.
   * Garbage collection?
+    * When the heap becomes full, garbage is collected. During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
   * Automatic reference counting?
+    * The heap is sometimes divided into two areas (or generations) called the nursery (or young space) and the old space. The nursery is a part of the heap reserved for allocation of new objects. When the nursery becomes full, garbage is collected by running a special young collection, where all objects that have lived long enough in the nursery are promoted (moved) to the old space, thus freeing up the nursery for more object allocation. When the old space becomes full garbage is collected there, a process called an old collection. The reasoning behind a nursery is that most objects are temporary and short lived. A young collection is designed to be swift at finding newly allocated objects that are still alive and moving them away from the nursery. Typically, a young collection frees a given amount of memory much faster than an old collection or a garbage collection of a single-generational heap (a heap without a nursery).
 * Comparisons of references and values
   * How are values compared? (i.e. comparing two strings)
+    ```
+    int compareTo(String anotherString)
+    ```
+    * Compares two strings lexicographically. Returns an integer indicating whether this string is greater than (result is > 0), equal to (result is = 0), or less than (result is < 0) the argument.
 * Null/nil references
   * Which does the language use? (null/nil/etc)
+    * Null
   * Does the language have features for handling null/nil references?
+    * NullPointerException is a RuntimeException. In Java, a special null value can be assigned to an object reference. NullPointerException is thrown when program attempts to use an object reference that has the null value.
 * Errors and exception handling
+  ```
+  try {
+   // Protected code
+  }catch(ExceptionName e1) {
+   // Catch block
+  }
+  ```
 * Lambda expressions, closures, or functions as types
+  ```
+  // Lambda Runnable
+  Runnable r2 = () -> System.out.println("Hello world two!");
+  ```
 * Implementation of listeners and event handlers
+  ```
+  class Eavesdropper implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+        myTextArea.append(e.getActionCommand() + newline);
+  }
+  ```
 * Singleton
   * How is a singleton implemented?
+    ```
+    public class ClassicSingleton {
+     private static ClassicSingleton instance = null;
+     protected ClassicSingleton() {
+      // Exists only to defeat instantiation.
+     }
+     public static ClassicSingleton getInstance() {
+      if(instance == null) {
+         instance = new ClassicSingleton();
+      }
+      return instance;
+     }
+    }
+    ```
   * Can it be made thread-safe?
+    * Provide the necessary thread-safety, as the Singleton instance is created at class-load time. 
   * Can the singleton instance be lazily instantiated?
+    * Thread A would check that resource == null so it goes inside to create the instance but might go into Runnable status before it creates the Resource instance.
 * Procedural programming
   * Does the language support procedural programming?
+    * Made possible through the class construct, which is an inherently object oriented construct.
 * Functional programming
   * Does the language support functional programming?
+    * In Java 8, the java.util.Function Interface was introduced. It can store a function which takes one argument and returns an object. The Generic T is the type of the argument and R the type of the object you return.
 * Multithreading
   * Threads or thread-like abilities
+    ```
+    Thread(Runnable threadObj, String threadName);
+    ```
   * How is multitasking accomplished?
-
+    * Thread synchronization, interthread communication, thread deadlock, & major thread operations.
 ---
 [Java Sources (Documentation & Code)](https://github.com/frankiecancino/JavaVsPython/blob/master/JavaSources.md)
 
@@ -276,24 +383,64 @@ Authors: Frankie Cancino & Daniel Hanson
     return lambda x: x + ' -- ' + name
   ```
 * Implementation of listeners and event handlers
-  * 
+  * class events.EventHandler(sender)
 * Singleton
   * How is a singleton implemented?
-  
+    ```
+    class SingletonDecorator:
+    def __init__(self,klass):
+        self.klass = klass
+        self.instance = None
+    def __call__(self,*args,**kwds):
+        if self.instance == None:
+            self.instance = self.klass(*args,**kwds)
+        return self.instance
+
+    class foo: pass
+    foo = SingletonDecorator(foo)
+    ```
   * Can it be made thread-safe?
-  
+    ```
+    class Singleton(type):
+      _instances = {}
+      def __call__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
+        return cls._instances[cls]
+
+    class Logger(object):
+     __metaclass__ = Singleton
+    ```
   * Can the singleton instance be lazily instantiated?
-  
+    * Use lazy initialization, so the singleton object is only created the first time that it is needed.
 * Procedural programming
   * Does the language support procedural programming?
-  
+    ```
+    def DoAdd(MyList):
+    Sum = 0
+    if type(MyList) is list:
+        for X in MyList:
+            Sum += X
+    return Sum
+    MyList = [1, 2, 3, 4, 5]
+    print(DoAdd(MyList))
+    ```
 * Functional programming
   * Does the language support functional programming?
-  
+    ```
+    import functools
+    MyList = [1, 2, 3, 4, 5]
+    def AddIt(X, Y):
+     return (X + Y)
+    Sum = functools.reduce(AddIt, MyList)
+    print(Sum)
+    ```
 * Multithreading
   * Threads or thread-like abilities
-  
+    ```
+    thread.start_new_thread ( function, args[, kwargs] )
+    ```
   * How is multitasking accomplished?
-
+    * The Queue module allows you to create a new queue object that can hold a specific number of items.
 ---
 [Python Sources (Documentation & Code)](https://github.com/frankiecancino/JavaVsPython/blob/master/PythonSources.md)
