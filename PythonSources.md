@@ -14,3 +14,4 @@
 * [Reflection](https://en.wikibooks.org/wiki/Python_Programming/Reflection)
 * [Memory Management](https://docs.python.org/2/c-api/memory.html)
 * [String Comparison](http://thepythonguru.com/python-strings/)
+* [Null/nil Reference](https://en.wikibooks.org/wiki/Python_Programming/Data_Types)
